@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://aashish66.github.io/portfolio",
+  "homepage": "https://aashish66.github.io/AashishGautam_Protfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
