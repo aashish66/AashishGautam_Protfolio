@@ -1,0 +1,242 @@
+/* Side Letter Animation */
+.home-with-animation {
+    position: relative;
+}
+
+.side-letter-animation {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.side-letter-animation.left {
+    left: 10px;
+}
+
+.side-letter-animation.right {
+    right: 10px;
+}
+
+.side-letter-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    animation: letterFadeIn 0.5s ease-out;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+@keyframes letterFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8) rotate(-5deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* Full Name Background Display */
+.name-display-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    pointer-events: none;
+}
+
+.name-images-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.name-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.full-name-image {
+    max-width: 80vw;
+    max-height: 35vh;
+    object-fit: contain;
+}
+
+@keyframes nameSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ensure content is above side animations */
+.home-with-animation .hero,
+.home-with-animation .section,
+.home-with-animation .name-display-section {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hide side animations on smaller screens */
+@media (max-width: 1400px) {
+    .side-letter-animation {
+        display: none;
+    }
+}
+
+/* Hero Section */
+.hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    padding: var(--space-3xl) var(--space-xl);
+}
+
+.hero-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--radius-xl);
+    border: 3px solid transparent;
+    background: linear-gradient(var(--bg-dark), var(--bg-dark)) padding-box,
+        var(--gradient-primary) border-box;
+    box-shadow: var(--shadow-glow);
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-xl);
+    opacity: 0.3;
+    filter: blur(30px);
+    z-index: -1;
+}
+
+.hero-content h1 {
+    margin-bottom: var(--space-lg);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--primary-light);
+    margin-bottom: var(--space-md);
+    font-weight: 500;
+}
+
+.hero-content .bio {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+/* Certifications */
+.certifications {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-2xl);
+}
+
+.cert-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+}
+
+.cert-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.cert-info h4 {
+    font-size: 1rem;
+    margin-bottom: var(--space-xs);
+    color: var(--text-primary);
+}
+
+.cert-info p {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 280px 1fr;
+        gap: var(--space-2xl);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-image {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .hero-content .bio {
+        margin: 0 auto;
+    }
+
+    .animation-frame {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certifications {
+        grid-template-columns: 1fr;
+    }
+
+    .animation-frame {
+        height: 150px;
+    }
+}

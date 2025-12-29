@@ -1,0 +1,185 @@
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-lg);
+}
+
+.skill-category {
+    padding: var(--space-xl);
+}
+
+.skill-category-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.skill-icon {
+    font-size: 2rem;
+}
+
+.skill-category h3 {
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+.cert-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-lg);
+}
+
+.cert-icon-large {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.cert-details h4 {
+    margin-bottom: var(--space-xs);
+    font-size: 1.1rem;
+}
+
+.cert-issuer {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-xs);
+}
+
+.cert-license {
+    color: var(--primary-light);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.proficiency-bars {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.proficiency-item {
+    width: 100%;
+}
+
+.proficiency-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-sm);
+    font-weight: 500;
+}
+
+.proficiency-header span:last-child {
+    color: var(--primary-light);
+}
+
+.proficiency-bar {
+    height: 10px;
+    background: var(--surface);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.proficiency-fill {
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    transition: width 1s ease;
+}
+
+/* License items special styling */
+.license-item {
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Trainings Grid */
+.trainings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-md);
+}
+
+.training-item {
+    padding: var(--space-lg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.training-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 180, 216, 0.2);
+}
+
+.training-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+}
+
+.training-header h4 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.training-year {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.training-issuer {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: var(--space-sm);
+}
+
+.training-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-top: var(--space-sm);
+}
+
+.skill-tag-small {
+    background: rgba(0, 180, 216, 0.15);
+    color: var(--primary-light);
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trainings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .training-header {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+}
