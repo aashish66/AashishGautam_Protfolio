@@ -11,7 +11,7 @@ import './index.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/AashishGautam_Protfolio">
       <div className="app">
         <Navbar />
         <Routes>
