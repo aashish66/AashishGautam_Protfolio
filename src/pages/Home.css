@@ -100,8 +100,55 @@
     z-index: 1;
 }
 
-/* Hide side animations on smaller screens */
+/* Responsive side animations for smaller screens */
 @media (max-width: 1400px) {
+    .side-letter-animation {
+        width: 200px;
+        height: 250px;
+    }
+
+    .side-letter-animation.left {
+        left: 5px;
+    }
+
+    .side-letter-animation.right {
+        right: 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .side-letter-animation {
+        width: 150px;
+        height: 200px;
+    }
+
+    .side-letter-animation.left {
+        left: 2px;
+    }
+
+    .side-letter-animation.right {
+        right: 2px;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-letter-animation {
+        width: 100px;
+        height: 150px;
+        opacity: 0.7;
+    }
+
+    .side-letter-animation.left {
+        left: 0;
+    }
+
+    .side-letter-animation.right {
+        right: 0;
+    }
+}
+
+/* Hide only on very small mobile screens */
+@media (max-width: 480px) {
     .side-letter-animation {
         display: none;
     }
