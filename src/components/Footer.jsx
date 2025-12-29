@@ -1,11 +1,14 @@
 import './Footer.css';
 
+// Base URL for assets (matches vite.config.js base)
+const BASE_URL = import.meta.env.BASE_URL;
+
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
                 {/* Left - AASHISH */}
-                <img src="/name-alphabet/AASHISH.png" alt="AASHISH" className="footer-name-image left" />
+                <img src={`${BASE_URL}name-alphabet/AASHISH.png`} alt="AASHISH" className="footer-name-image left" />
 
                 {/* Center - Copyright and Social Icons */}
                 <div className="footer-center">
@@ -24,7 +27,7 @@ const Footer = () => {
                 </div>
 
                 {/* Right - GAUTAM */}
-                <img src="/name-alphabet/GAUTAM.png" alt="GAUTAM" className="footer-name-image right" />
+                <img src={`${BASE_URL}name-alphabet/GAUTAM.png`} alt="GAUTAM" className="footer-name-image right" />
             </div>
         </footer>
     );

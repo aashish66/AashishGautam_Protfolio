@@ -3,30 +3,33 @@ import GalleryItem from '../components/GalleryItem';
 import Modal from '../components/Modal';
 import './Home.css';
 
+// Base URL for assets (matches vite.config.js base)
+const BASE_URL = import.meta.env.BASE_URL;
+
 // Import images - you'll need to copy images to public folder or use correct paths
-const profilePhoto = '/images/ProfilePhoto.jpg';
+const profilePhoto = `${BASE_URL}images/ProfilePhoto.jpg`;
 
 // Name animation images in sequence: AASHISH, then GAUTAM, then full names
 const nameAnimationSequence = [
     // A-A-S-H-I-S-H (AASHISH)
-    { src: '/name-alphabet/a_0.jpg', letter: 'A' },
-    { src: '/name-alphabet/a_3.jpg', letter: 'A' },
-    { src: '/name-alphabet/s_0.jpg', letter: 'S' },
-    { src: '/name-alphabet/h_0.jpg', letter: 'H' },
-    { src: '/name-alphabet/i_0.jpg', letter: 'I' },
-    { src: '/name-alphabet/s_2.jpg', letter: 'S' },
-    { src: '/name-alphabet/h_1.jpg', letter: 'H' },
+    { src: `${BASE_URL}name-alphabet/a_0.jpg`, letter: 'A' },
+    { src: `${BASE_URL}name-alphabet/a_3.jpg`, letter: 'A' },
+    { src: `${BASE_URL}name-alphabet/s_0.jpg`, letter: 'S' },
+    { src: `${BASE_URL}name-alphabet/h_0.jpg`, letter: 'H' },
+    { src: `${BASE_URL}name-alphabet/i_0.jpg`, letter: 'I' },
+    { src: `${BASE_URL}name-alphabet/s_2.jpg`, letter: 'S' },
+    { src: `${BASE_URL}name-alphabet/h_1.jpg`, letter: 'H' },
     // Full name AASHISH
-    { src: '/name-alphabet/AASHISH.png', letter: 'AASHISH', isFullName: true },
+    { src: `${BASE_URL}name-alphabet/AASHISH.png`, letter: 'AASHISH', isFullName: true },
     // G-A-U-T-A-M (GAUTAM)
-    { src: '/name-alphabet/g_0.jpg', letter: 'G' },
-    { src: '/name-alphabet/a_4.jpg', letter: 'A' },
-    { src: '/name-alphabet/u_0.jpg', letter: 'U' },
-    { src: '/name-alphabet/t_1.jpg', letter: 'T' },
-    { src: '/name-alphabet/a_0 (1).jpg', letter: 'A' },
-    { src: '/name-alphabet/m_0.jpg', letter: 'M' },
+    { src: `${BASE_URL}name-alphabet/g_0.jpg`, letter: 'G' },
+    { src: `${BASE_URL}name-alphabet/a_4.jpg`, letter: 'A' },
+    { src: `${BASE_URL}name-alphabet/u_0.jpg`, letter: 'U' },
+    { src: `${BASE_URL}name-alphabet/t_1.jpg`, letter: 'T' },
+    { src: `${BASE_URL}name-alphabet/a_0 (1).jpg`, letter: 'A' },
+    { src: `${BASE_URL}name-alphabet/m_0.jpg`, letter: 'M' },
     // Full name GAUTAM
-    { src: '/name-alphabet/GAUTAM.png', letter: 'GAUTAM', isFullName: true },
+    { src: `${BASE_URL}name-alphabet/GAUTAM.png`, letter: 'GAUTAM', isFullName: true },
 ];
 
 const Home = () => {
@@ -50,14 +53,14 @@ const Home = () => {
     ];
 
     const galleryItems = [
-        { src: '/images/field/DroneSurvey1.jpg', title: 'Drone Survey Operations', desc: 'UAV-based topographic mapping' },
-        { src: '/images/field/DroneSurvey2.jpg', title: 'UAV Field Work', desc: 'Terrain mapping preparation' },
-        { src: '/images/field/Gallery_Drone_img_LakeKhulekhani.jpg', title: 'Lake Khulekhani Survey', desc: 'Bathymetric mapping project' },
-        { src: '/images/field/DGPS_Survey1.jpg', title: 'DGPS Survey', desc: 'Ground control establishment' },
-        { src: '/images/field/Gallery4500m_Height_Jumla_Nepal.jpg', title: 'High Altitude Survey', desc: '4500m elevation, Jumla, Nepal' },
-        { src: '/images/field/TotalStation1.jpg', title: 'Total Station Survey', desc: 'Precision ground measurements' },
-        { src: '/images/field/Lake_Bathymety_survey.jpg', title: 'Bathymetric Survey', desc: 'Underwater terrain mapping' },
-        { src: '/images/Gallery_RaraLake.jpg', title: 'Rara Lake', desc: 'Field research visit' },
+        { src: `${BASE_URL}images/field/DroneSurvey1.jpg`, title: 'Drone Survey Operations', desc: 'UAV-based topographic mapping' },
+        { src: `${BASE_URL}images/field/DroneSurvey2.jpg`, title: 'UAV Field Work', desc: 'Terrain mapping preparation' },
+        { src: `${BASE_URL}images/field/Gallery_Drone_img_LakeKhulekhani.jpg`, title: 'Lake Khulekhani Survey', desc: 'Bathymetric mapping project' },
+        { src: `${BASE_URL}images/field/DGPS_Survey1.jpg`, title: 'DGPS Survey', desc: 'Ground control establishment' },
+        { src: `${BASE_URL}images/field/Gallery4500m_Height_Jumla_Nepal.jpg`, title: 'High Altitude Survey', desc: '4500m elevation, Jumla, Nepal' },
+        { src: `${BASE_URL}images/field/TotalStation1.jpg`, title: 'Total Station Survey', desc: 'Precision ground measurements' },
+        { src: `${BASE_URL}images/field/Lake_Bathymety_survey.jpg`, title: 'Bathymetric Survey', desc: 'Underwater terrain mapping' },
+        { src: `${BASE_URL}images/Gallery_RaraLake.jpg`, title: 'Rara Lake', desc: 'Field research visit' },
     ];
 
     const openModal = (media, title, description) => {

@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import './Research.css';
 
+// Base URL for assets (matches vite.config.js base)
+const BASE_URL = import.meta.env.BASE_URL;
+
 const Research = () => {
     const [selectedPoster, setSelectedPoster] = useState(null);
 
@@ -51,11 +54,11 @@ const Research = () => {
             posters: [
                 {
                     title: 'Sediment Dynamics in Lake Pepin',
-                    file: '/posters/Sediment_LakePepin_AashishGautam.pdf'
+                    file: `${BASE_URL}posters/Sediment_LakePepin_AashishGautam.pdf`
                 },
                 {
                     title: 'Urban Heat & Moisture Anomalies',
-                    file: '/posters/Unravelling_UHI_UMI_AashishGautam.pdf'
+                    file: `${BASE_URL}posters/Unravelling_UHI_UMI_AashishGautam.pdf`
                 }
             ]
         },
@@ -147,7 +150,7 @@ const Research = () => {
             {/* Conference Photo */}
             <section className="section">
                 <div className="conference-image">
-                    <img src="/images/Conference_FIG_2024_kathmandu.jpg" alt="FIG Conference 2024 Kathmandu" />
+                    <img src={`${BASE_URL}images/Conference_FIG_2024_kathmandu.jpg`} alt="FIG Conference 2024 Kathmandu" />
                     <p className="image-caption">FIG International Congress 2024, Kathmandu, Nepal</p>
                 </div>
             </section>

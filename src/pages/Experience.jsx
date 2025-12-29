@@ -3,6 +3,9 @@ import GalleryItem from '../components/GalleryItem';
 import Modal from '../components/Modal';
 import './Experience.css';
 
+// Base URL for assets (matches vite.config.js base)
+const BASE_URL = import.meta.env.BASE_URL;
+
 const Experience = () => {
     const [modalData, setModalData] = useState({ isOpen: false, media: '', title: '', description: '' });
 
@@ -28,34 +31,34 @@ const Experience = () => {
     ];
 
     const officeWork = [
-        { src: '/images/gis/ArcGIS_CityEngine.jpg', title: 'ArcGIS CityEngine', desc: '3D urban modeling and visualization', isVideo: false },
-        { src: '/images/gis/Building_Detection_Arcgis.jpg', title: 'Building Detection', desc: 'AI-powered building extraction from imagery', isVideo: false },
-        { src: '/images/gis/FloodMap_Qgis.jpg', title: 'Flood Mapping', desc: 'QGIS-based flood extent analysis', isVideo: false },
-        { src: '/images/gis/Heat Risk Index Map for Athens.jpg', title: 'Heat Risk Index', desc: 'Urban heat risk analysis and mapping', isVideo: false },
-        { src: '/images/gis/TIA_QGIS_Map.jpg', title: 'TIA QGIS Map', desc: 'Airport vicinity mapping project', isVideo: false },
-        { src: '/images/gis/UrbanHeat_ArcGIS1.jpg', title: 'Urban Heat Analysis', desc: 'Thermal imagery analysis for cities', isVideo: false },
-        { src: '/images/animation/Flood_sim_ArcgisCityEngine_Nepal.mp4', title: 'Flood Simulation', desc: '3D flood simulation in ArcGIS CityEngine', isVideo: true },
-        { src: '/images/animation/LiDAR Technology for Transmission Line Projects in Nepal\'s Hilly Terrain.mp4', title: 'LiDAR for Transmission Lines', desc: 'LiDAR survey for powerline corridor mapping', isVideo: true },
-        { src: '/images/gee/1724324095710.gif', title: 'GEE Time-Lapse', desc: 'Google Earth Engine satellite imagery analysis', isVideo: false },
-        { src: '/images/gee/Flood_Sentinel1_Banke_Nepal_GEE.mp4', title: 'Flood Detection - Sentinel-1', desc: 'SAR-based flood extent mapping in Banke, Nepal', isVideo: true },
+        { src: `${BASE_URL}images/gis/ArcGIS_CityEngine.jpg`, title: 'ArcGIS CityEngine', desc: '3D urban modeling and visualization', isVideo: false },
+        { src: `${BASE_URL}images/gis/Building_Detection_Arcgis.jpg`, title: 'Building Detection', desc: 'AI-powered building extraction from imagery', isVideo: false },
+        { src: `${BASE_URL}images/gis/FloodMap_Qgis.jpg`, title: 'Flood Mapping', desc: 'QGIS-based flood extent analysis', isVideo: false },
+        { src: `${BASE_URL}images/gis/Heat Risk Index Map for Athens.jpg`, title: 'Heat Risk Index', desc: 'Urban heat risk analysis and mapping', isVideo: false },
+        { src: `${BASE_URL}images/gis/TIA_QGIS_Map.jpg`, title: 'TIA QGIS Map', desc: 'Airport vicinity mapping project', isVideo: false },
+        { src: `${BASE_URL}images/gis/UrbanHeat_ArcGIS1.jpg`, title: 'Urban Heat Analysis', desc: 'Thermal imagery analysis for cities', isVideo: false },
+        { src: `${BASE_URL}images/animation/Flood_sim_ArcgisCityEngine_Nepal.mp4`, title: 'Flood Simulation', desc: '3D flood simulation in ArcGIS CityEngine', isVideo: true },
+        { src: `${BASE_URL}images/animation/LiDAR Technology for Transmission Line Projects in Nepal's Hilly Terrain.mp4`, title: 'LiDAR for Transmission Lines', desc: 'LiDAR survey for powerline corridor mapping', isVideo: true },
+        { src: `${BASE_URL}images/gee/1724324095710.gif`, title: 'GEE Time-Lapse', desc: 'Google Earth Engine satellite imagery analysis', isVideo: false },
+        { src: `${BASE_URL}images/gee/Flood_Sentinel1_Banke_Nepal_GEE.mp4`, title: 'Flood Detection - Sentinel-1', desc: 'SAR-based flood extent mapping in Banke, Nepal', isVideo: true },
     ];
 
     const fieldWork = [
-        { src: '/images/field/DroneSurvey3.jpg', title: 'Drone Survey Setup', desc: 'Preparing UAV for aerial mapping mission', isVideo: false },
-        { src: '/images/field/DroneSurvey4.jpg', title: 'Field Operations', desc: 'Survey team in action', isVideo: false },
-        { src: '/images/field/DroneSurvey5.jpg', title: 'UAV Launch', desc: 'Quadcopter takeoff for survey mission', isVideo: false },
-        { src: '/images/field/DroneSurvey6.jpg', title: 'Mountain Survey', desc: 'High altitude drone operations', isVideo: false },
-        { src: '/images/field/DroneSurvey7.jpg', title: 'Data Collection', desc: 'Ground control point measurement', isVideo: false },
-        { src: '/images/animation/Bathymetric Survey in khulekhani.mp4', title: 'Bathymetric Survey', desc: 'Lake depth measurement operations', isVideo: true },
+        { src: `${BASE_URL}images/field/DroneSurvey3.jpg`, title: 'Drone Survey Setup', desc: 'Preparing UAV for aerial mapping mission', isVideo: false },
+        { src: `${BASE_URL}images/field/DroneSurvey4.jpg`, title: 'Field Operations', desc: 'Survey team in action', isVideo: false },
+        { src: `${BASE_URL}images/field/DroneSurvey5.jpg`, title: 'UAV Launch', desc: 'Quadcopter takeoff for survey mission', isVideo: false },
+        { src: `${BASE_URL}images/field/DroneSurvey6.jpg`, title: 'Mountain Survey', desc: 'High altitude drone operations', isVideo: false },
+        { src: `${BASE_URL}images/field/DroneSurvey7.jpg`, title: 'Data Collection', desc: 'Ground control point measurement', isVideo: false },
+        { src: `${BASE_URL}images/animation/Bathymetric Survey in khulekhani #geomaticsengineer #Khulekhani #lake.mp4`, title: 'Bathymetric Survey', desc: 'Lake depth measurement operations', isVideo: true },
     ];
 
     const workshops = [
-        { src: '/images/workshop/DMG_workshop_LiDAR&GlobalMapper_Training_1_2023.jpg', title: 'LiDAR & Global Mapper Training', desc: 'DMG Workshop 2023' },
-        { src: '/images/workshop/DMG_workshop_LiDAR&GlobalMapper_Training_2023.jpg', title: 'Point Cloud Processing', desc: 'Advanced LiDAR data processing workshop' },
-        { src: '/images/workshop/REDD_Implementation_Center_Drone&LiDAR_Training_2024.jpg', title: 'Drone & LiDAR Training', desc: 'REDD Implementation Center 2024' },
-        { src: '/images/workshop/UAV_workshop_KU_2024.jpg', title: 'UAV Workshop', desc: 'Kathmandu University 2024' },
-        { src: '/images/workshop/UAV_workshop_KU_2024_1.jpg', title: 'Flight Planning Session', desc: 'Mission planning and execution training' },
-        { src: '/images/workshop/UAV_workshop_KU_2024_2.jpg', title: 'Practical Training', desc: 'Hands-on drone operation training' },
+        { src: `${BASE_URL}images/workshop/DMG_workshop_LiDAR&GlobalMapper_Training_1_2023.jpg`, title: 'LiDAR & Global Mapper Training', desc: 'DMG Workshop 2023' },
+        { src: `${BASE_URL}images/workshop/DMG_workshop_LiDAR&GlobalMapper_Training_2023.jpg`, title: 'Point Cloud Processing', desc: 'Advanced LiDAR data processing workshop' },
+        { src: `${BASE_URL}images/workshop/REDD_Implementation_Center_Drone&LiDAR_Training_2024.jpg`, title: 'Drone & LiDAR Training', desc: 'REDD Implementation Center 2024' },
+        { src: `${BASE_URL}images/workshop/UAV_workshop_KU_2024.jpg`, title: 'UAV Workshop', desc: 'Kathmandu University 2024' },
+        { src: `${BASE_URL}images/workshop/UAV_workshop_KU_2024_1.jpg`, title: 'Flight Planning Session', desc: 'Mission planning and execution training' },
+        { src: `${BASE_URL}images/workshop/UAV_workshop_KU_2024_2.jpg`, title: 'Practical Training', desc: 'Hands-on drone operation training' },
     ];
 
     const openModal = (media, title, description) => {
