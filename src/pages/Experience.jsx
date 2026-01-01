@@ -49,7 +49,7 @@ const Experience = () => {
         { src: `${BASE_URL}images/field/DroneSurvey5.jpg`, title: 'UAV Launch', desc: 'Quadcopter takeoff for survey mission', isVideo: false },
         { src: `${BASE_URL}images/field/DroneSurvey6.jpg`, title: 'Mountain Survey', desc: 'High altitude drone operations', isVideo: false },
         { src: `${BASE_URL}images/field/DroneSurvey7.jpg`, title: 'Data Collection', desc: 'Ground control point measurement', isVideo: false },
-        { src: `${BASE_URL}images/animation/Bathymetric Survey in khulekhani #geomaticsengineer #Khulekhani #lake.mp4`, title: 'Bathymetric Survey', desc: 'Lake depth measurement operations', isVideo: true },
+        { src: `${BASE_URL}images/animation/Bathymetric_Survey_Khulekhani.mp4`, title: 'Bathymetric Survey', desc: 'Lake depth measurement operations', isVideo: true },
     ];
 
     const workshops = [
