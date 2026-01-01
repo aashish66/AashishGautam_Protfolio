@@ -135,6 +135,49 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Tools Section */}
+            <section className="section">
+                <div className="section-header">
+                    <h2>🛠️ Google Earth Engine Tools</h2>
+                    <p>Interactive web applications for environmental monitoring and analysis</p>
+                </div>
+                <div className="tools-grid">
+                    <div 
+                        className="glass-card tool-card"
+                        onClick={() => window.open('https://ee-aashishgautam533.projects.earthengine.app/view/global-air-pollution-explorer', '_blank')}
+                    >
+                        <div className="tool-header">
+                            <h3>🌍 Global Air Pollution Explorer</h3>
+                            <span className="tool-badge">GEE App</span>
+                        </div>
+                        <p className="tool-description">
+                            This application presents global population distribution and population exposure to ground-level PM₂.₅ air pollution for the year 2020. Users can click on any location to view the annual mean PM₂.₅ concentration, the estimated population at that location, and the exceedance factor. The exceedance factor is calculated as the ratio of the observed PM₂.₅ concentration to the World Health Organization annual guideline value of 5 µg/m³. The legend panel allows users to switch between different data layers for exploration. In addition to the 2020 snapshot, the app also displays long-term trends in annual average PM₂.₅ concentrations from 1998 to 2021 for the selected pixel, providing insight into how air quality has changed over time.
+                        </p>
+                        <div className="tool-footer">
+                            <span className="tool-id">📦 cloud/ee-aashishgautam533/global-air-pollution-explorer</span>
+                            <span className="tool-action">Click to launch →</span>
+                        </div>
+                    </div>
+
+                    <div 
+                        className="glass-card tool-card"
+                        onClick={() => window.open('https://ee-aashishgautam533.projects.earthengine.app/view/sat2ssc', '_blank')}
+                    >
+                        <div className="tool-header">
+                            <h3>🛰️ Sat2SSC</h3>
+                            <span className="tool-badge">GEE App</span>
+                        </div>
+                        <p className="tool-description">
+                            <strong>Real-time Suspended Sediment Concentration Monitoring:</strong> Estimate TSS concentrations (0-3000 mg/L) in CONUS rivers using machine learning models trained on HLS, Landsat 8/9, and Sentinel-2 data (2015-2024). This tool provides accurate, near real-time monitoring of water quality across the continental United States, enabling researchers and water resource managers to track sediment dynamics and assess environmental impacts on riverine ecosystems.
+                        </p>
+                        <div className="tool-footer">
+                            <span className="tool-id">📦 cloud/ee-aashishgautam533/sat2ssc</span>
+                            <span className="tool-action">Click to launch →</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Gallery Section */}
             <section className="section">
                 <div className="section-header">
