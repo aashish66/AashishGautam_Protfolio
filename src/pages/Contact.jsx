@@ -198,30 +198,30 @@ const Contact = () => {
                 </div>
                 <div className="visitor-stats-container glass-card">
                     <div className="stats-widget">
-                        {/* Flag Counter Widget */}
-                        <a href="https://s01.flagcounter.com/more/88" target="_blank" rel="noopener noreferrer">
+                        {/* Flag Counter Widget with detailed stats */}
+                        <a href="https://info.flagcounter.com/QLhU" target="_blank" rel="noopener noreferrer">
                             <img
-                                src="https://s01.flagcounter.com/count2/88/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_12/viewers_3/labels_1/pageviews_1/flags_0/percent_0/"
+                                src="https://s11.flagcounter.com/count2/QLhU/bg_FFFFFF/txt_000000/border_CCCCCC/columns_4/maxflags_16/viewers_0/labels_1/pageviews_1/flags_1/percent_0/"
                                 alt="Visitor Statistics by Country"
                                 className="flag-counter-img"
                             />
                         </a>
                         <p className="stats-note">
-                            📍 Live visitor tracking by country
+                            📍 Live visitor tracking • Day • Week • Month • Total
                         </p>
                     </div>
                     <div className="stats-info">
                         <div className="stat-item">
                             <span className="stat-icon">🌍</span>
-                            <span className="stat-text">Visitors from multiple countries</span>
+                            <span className="stat-text">Global visitor tracking across countries</span>
                         </div>
                         <div className="stat-item">
                             <span className="stat-icon">📈</span>
-                            <span className="stat-text">Real-time page view tracking</span>
+                            <span className="stat-text">Daily, weekly, monthly & yearly statistics</span>
                         </div>
                         <div className="stat-item">
                             <span className="stat-icon">🏳️</span>
-                            <span className="stat-text">Country flags show visitor origins</span>
+                            <span className="stat-text">Country flags with visitor counts</span>
                         </div>
                     </div>
                 </div>
