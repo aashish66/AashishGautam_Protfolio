@@ -123,58 +123,7 @@ const Skills = () => {
                 </div>
             </section>
 
-            <section className="section">
-                <div className="section-header">
-                    <h2>Software Proficiency</h2>
-                </div>
-                <div className="proficiency-bars">
-                    <div className="proficiency-item">
-                        <div className="proficiency-header">
-                            <span>ArcGIS Pro / QGIS</span>
-                            <span>95%</span>
-                        </div>
-                        <div className="proficiency-bar">
-                            <div className="proficiency-fill" style={{ width: '95%' }}></div>
-                        </div>
-                    </div>
-                    <div className="proficiency-item">
-                        <div className="proficiency-header">
-                            <span>Python / GIS Scripting</span>
-                            <span>85%</span>
-                        </div>
-                        <div className="proficiency-bar">
-                            <div className="proficiency-fill" style={{ width: '85%' }}></div>
-                        </div>
-                    </div>
-                    <div className="proficiency-item">
-                        <div className="proficiency-header">
-                            <span>Drone / UAV Operations</span>
-                            <span>90%</span>
-                        </div>
-                        <div className="proficiency-bar">
-                            <div className="proficiency-fill" style={{ width: '90%' }}></div>
-                        </div>
-                    </div>
-                    <div className="proficiency-item">
-                        <div className="proficiency-header">
-                            <span>LiDAR Data Processing</span>
-                            <span>88%</span>
-                        </div>
-                        <div className="proficiency-bar">
-                            <div className="proficiency-fill" style={{ width: '88%' }}></div>
-                        </div>
-                    </div>
-                    <div className="proficiency-item">
-                        <div className="proficiency-header">
-                            <span>Remote Sensing Analysis</span>
-                            <span>85%</span>
-                        </div>
-                        <div className="proficiency-bar">
-                            <div className="proficiency-fill" style={{ width: '85%' }}></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
         </main>
     );
 };
