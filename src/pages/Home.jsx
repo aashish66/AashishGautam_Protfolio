@@ -141,6 +141,22 @@ const Home = () => {
                     <h2>🛠️ Google Earth Engine Tools</h2>
                     <p>Interactive web applications for environmental monitoring and analysis</p>
                 </div>
+                <div 
+                        className="glass-card tool-card"
+                        onClick={() => window.open('https://aashishgautamprotfolio-gpnnxhqkm2gyptofmfjude.streamlit.app/', '_blank')}
+                    >
+                        <div className="tool-header">
+                            <h3>🛰️ AgriVision_Pro</h3>
+                            <span className="tool-badge">Python GeeMap App</span>
+                        </div>
+                        <p className="tool-description">
+                            <strong>AgriVision_Pro</strong> is a web-based vegetation analysis platform that allows users to monitor crop and vegetation health using satellite imagery (Sentinel-2, Landsat, MODIS) and drone/camera photos.Users can define their area of interest, search for imagery over any date range, and calculate various vegetation indices (NDVI, SAVI, EVI, etc.) to assess plant health, detect water stress, and track changes over time. The app features side-by-side image comparison, time series analysis with interactive charts, composite image generation (mean/median), and multi-index comparison tools. All data is processed through Google Earth Engine, providing free access to decades of global satellite imagery without requiring any downloads or specialized GIS software.
+                        </p>
+                        <div className="tool-footer">
+                            <span className="tool-id">📦 https://aashishgautamprotfolio-gpnnxhqkm2gyptofmfjude.streamlit.app/</span>
+                            <span className="tool-action">Click to launch →</span>
+                        </div>
+                    </div>
                 <div className="tools-grid">
                     <div 
                         className="glass-card tool-card"
