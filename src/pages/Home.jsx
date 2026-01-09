@@ -143,7 +143,7 @@ const Home = () => {
                 </div>
                 <div 
                         className="glass-card tool-card"
-                        onClick={() => window.open('https://aashishgautamprotfolio-gpnnxhqkm2gyptofmfjude.streamlit.app/', '_blank')}
+                        onClick={() => window.open('https://agrivision-pro.streamlit.app//', '_blank')}
                     >
                         <div className="tool-header">
                             <h3>🛰️ AgriVision_Pro</h3>
