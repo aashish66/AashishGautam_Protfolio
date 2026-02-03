@@ -157,6 +157,24 @@ const Home = () => {
                             <span className="tool-action">Click to launch →</span>
                         </div>
                     </div>
+                {/* LCZ_HeatMoist... */}
+                  <div 
+                        className="glass-card tool-card"
+                        onClick={() => window.open('https://lczheatmoist.streamlit.app/', '_blank')}
+                    >
+                        <div className="tool-header">
+                            <h3>🛰️ LCZ-HeatMoist</h3>
+                            <span className="tool-badge">Python GeeMap App</span>
+                        </div>
+                        <p className="tool-description">
+                            <strong>LCZ-HeatMoist</strong> is an interactive web application designed to visualize and analyze urban climate phenomena across 50 major US cities from 2000-2020. The app enables researchers, urban planners, and climate scientists to explore the relationships between Local Climate Zones (LCZ) and three key urban climate indicators: Surface Urban Heat Island (SUHI), Urban Moisture Island (UMI), and Urban Dry Island (UDI). Built with Streamlit and featuring rich visualizations through Plotly and Folium, users can explore a CONUS-wide interactive map, perform deep-dive city analyses, compare multiple cities side-by-side, and examine how different LCZ classes influence local temperature and moisture conditions. The application leverages data from MODIS Land Surface Temperature, ERA5-Land humidity reanalysis, and WUDAPT LCZ classifications to provide comprehensive seasonal and day/night pattern analysis. Whether you're investigating which urban morphologies contribute most to heat islands or comparing mitigation strategies across different regions, LCZ-HeatMoist provides the analytical tools needed to understand complex urban-rural climate dynamics.
+                        </p>
+                        <div className="tool-footer">
+                            <span className="tool-id">📦 https://aashishgautamprotfolio-gpnnxhqkm2gyptofmfjude.streamlit.app/</span>
+                            <span className="tool-action">Click to launch →</span>
+                        </div>
+                    </div>
+                {/* LCZ_HeatMoist... */}
                 <div className="tools-grid">
                     <div 
                         className="glass-card tool-card"
