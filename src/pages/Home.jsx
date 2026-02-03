@@ -153,7 +153,7 @@ const Home = () => {
                             <strong>AgriVision_Pro</strong> is a web-based vegetation analysis platform that allows users to monitor crop and vegetation health using satellite imagery (Sentinel-2, Landsat, MODIS) and drone/camera photos.Users can define their area of interest, search for imagery over any date range, and calculate various vegetation indices (NDVI, SAVI, EVI, etc.) to assess plant health, detect water stress, and track changes over time. The app features side-by-side image comparison, time series analysis with interactive charts, composite image generation (mean/median), and multi-index comparison tools. All data is processed through Google Earth Engine, providing free access to decades of global satellite imagery without requiring any downloads or specialized GIS software.
                         </p>
                         <div className="tool-footer">
-                            <span className="tool-id">📦 https://aashishgautamprotfolio-gpnnxhqkm2gyptofmfjude.streamlit.app/</span>
+                            <span className="tool-id">📦 https://agrivision-pro.streamlit.app/</span>
                             <span className="tool-action">Click to launch →</span>
                         </div>
                     </div>
@@ -170,7 +170,7 @@ const Home = () => {
                             <strong>LCZ-HeatMoist</strong> is an interactive web application designed to visualize and analyze urban climate phenomena across 50 major US cities from 2000-2020. The app enables researchers, urban planners, and climate scientists to explore the relationships between Local Climate Zones (LCZ) and three key urban climate indicators: Surface Urban Heat Island (SUHI), Urban Moisture Island (UMI), and Urban Dry Island (UDI). Built with Streamlit and featuring rich visualizations through Plotly and Folium, users can explore a CONUS-wide interactive map, perform deep-dive city analyses, compare multiple cities side-by-side, and examine how different LCZ classes influence local temperature and moisture conditions. The application leverages data from MODIS Land Surface Temperature, ERA5-Land humidity reanalysis, and WUDAPT LCZ classifications to provide comprehensive seasonal and day/night pattern analysis. Whether you're investigating which urban morphologies contribute most to heat islands or comparing mitigation strategies across different regions, LCZ-HeatMoist provides the analytical tools needed to understand complex urban-rural climate dynamics.
                         </p>
                         <div className="tool-footer">
-                            <span className="tool-id">📦 https://aashishgautamprotfolio-gpnnxhqkm2gyptofmfjude.streamlit.app/</span>
+                            <span className="tool-id">📦 https://lczheatmoist.streamlit.app/</span>
                             <span className="tool-action">Click to launch →</span>
                         </div>
                     </div>
