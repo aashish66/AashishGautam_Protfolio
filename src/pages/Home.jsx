@@ -157,7 +157,7 @@ const Home = () => {
                             <span className="tool-action">Click to launch →</span>
                         </div>
                     </div>
-                {/* LCZ_HeatMoist... */}
+                /* {/* LCZ_HeatMoist... */}
                   <div 
                         className="glass-card tool-card"
                         onClick={() => window.open('https://lczheatmoist.streamlit.app//', '_blank')}
@@ -174,7 +174,7 @@ const Home = () => {
                             <span className="tool-action">Click to launch →</span>
                         </div>
                     </div>
-                {/* LCZ_HeatMoist... */}
+                {/* LCZ_HeatMoist... */} */
                 <div className="tools-grid">
                     <div 
                         className="glass-card tool-card"
