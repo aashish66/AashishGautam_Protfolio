@@ -160,7 +160,7 @@ const Home = () => {
                 /* {/* LCZ_HeatMoist... */}
                   <div 
                         className="glass-card tool-card"
-                        onClick={() => window.open('https://lczheatmoist.streamlit.app//', '_blank')}
+                        onClick={() => window.open('https://unraveluhiumiudi-kbshudpgryrfp7ercebzo2.streamlit.app//', '_blank')}
                     >
                         <div className="tool-header">
                             <h3>🛰️ LCZ-HeatMoist</h3>
