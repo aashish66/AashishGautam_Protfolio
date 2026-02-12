@@ -24,15 +24,16 @@ const Research = () => {
             title: 'Unraveling Urban Heat and Moisture Anomalies Across the Continental U.S. Using Local Climate Zones and Earth Observation Data',
             description: 'Using satellite thermal imagery to analyze urban heat island effects and their correlation with land use patterns.',
             status: 'Ongoing',
+            doi:"
             year: '2025'
         }
     ];
 
     const publications = [
         {
-            title: 'Satellite-Derived Salinity Dynamics in the Mississippi Sound: A Hurricane Nate Case Study with Ecological and Socio-Economic Implications',
-            journal: 'Status Under Review',
-            doi: 'In Press',
+            title: 'Satellite-Derived Salinity Dynamics in the Mississippi Sound: A Hurricane Nate Case Study',
+            journal: 'Springer Nature (ESEV)',
+            doi: 'https://doi.org/10.1007/s41748-026-01044-3',
             year: '2025',
             type: 'Journal Article'
         },
