@@ -9,27 +9,35 @@ const Research = () => {
 
     const ongoingResearch = [
         {
-            title: 'SEN2SSC: A RANDOM FOREST-BASED FRAMEWORK FOR ESTIMATING SUSPENDED SEDIMENT CONCENTRATION IN CONUS RIVERS USING SENTINEL-2 IMAGERY',
-            description: 'Suspended sediment concentration (SSC) is a critical indicator of water quality and ecosystem health in riverine systems, yet continuous monitoring remains challenging due to the sparse distribution of in-situ measurement stations and high operational costs. This study presents Sen2SSC, a novel Random Forest-based framework for estimating SSC in rivers across the Contiguous United States (CONUS) using Sentinel-2 multispectral imagery. ',
+            title: 'SAT2SSC: A MULTI-SENSOR, MULTI-ALGORITHM MACHINE LEARNING FRAMEWORK FOR SUSPENDED SEDIMENT CONCENTRATION ESTIMATION IN CONUS RIVERS',
             status: 'Ongoing',
-            year: '2025'
+            year: '2026'
         },
-        {
-            title: 'Compound Impacts of a Natural Lake and Navigation Dams on Suspended Sediment Dynamics in the Upper Mississippi River',
-            description: 'Suspended sediment transport is a key driver of riverine geomorphology, water quality, and ecosystem health—but is often disrupted by dams and natural lakes that act as sediment traps. This study examines how a compound impoundment system—Lock & Dam 3, Lake Pepin, and Lock & Dam 4—modifies sediment dynamics in the Upper Mississippi River’s Pool 4 reach. We use 34 years (1984–2018) of satellite-derived suspended sediment concentration (SSC) from the RivSed database, combined with bathymetric, hydrologic, and watershed modeling (InVEST Sediment Delivery Ratio), to quantify spatial and temporal patterns of sediment recovery. ',
-            status: 'Ongoing',
-            year: '2025'
-        },
-        {
-            title: 'Unraveling Urban Heat and Moisture Anomalies Across the Continental U.S. Using Local Climate Zones and Earth Observation Data',
-            description: 'Using satellite thermal imagery to analyze urban heat island effects and their correlation with land use patterns.',
-            status: 'Ongoing',
-            doi:"
-            year: '2025'
-        }
+      
     ];
 
     const publications = [
+         {
+            title: 'Sat2SSC: Multi-Sensor Machine Learning for Suspended Sediment Monitoring in CONUS Rivers',
+            journal: 'IEEEGARSS',
+            doi: 'https://2026.ieeeigarss.org/view_paper.php?PaperNum=1684&SessionID=1504',
+            year: '2026',
+            type: 'Conference Proceedings'
+        },
+         {
+            title: 'Suspended Sediment Dynamics Under the Compound Influence of a Natural Lake and Navigation Dams in the Upper Mississippi River: Insights from Remote Sensing and Modeling',
+            journal: 'MDPI Remote Sensing',
+            doi: 'https://doi.org/10.3390/rs18071095',
+            year: '2026',
+            type: 'Journal Article'
+        },
+          {
+            title: 'Urban morphology controls thermal and moisture anomalies: Insights from local climate zones across U.S. cities',
+            journal: 'RSASE Elsevier',
+            doi: 'https://doi.org/10.1016/j.rsase.2026.102161',
+            year: '2026',
+            type: 'Journal Article'
+        },
         {
             title: 'Satellite-Derived Salinity Dynamics in the Mississippi Sound: A Hurricane Nate Case Study',
             journal: 'Springer Nature (ESEV)',
